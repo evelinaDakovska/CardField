@@ -2,7 +2,7 @@ import React from "react";
 import "./SingleCardComponent.scss";
 import { SingleTread } from "../ContentContainer/types";
 import moment from "moment";
-import { isHightRating } from "../../utils/utils";
+import { isHighRating } from "../../utils/utils";
 
 interface PropType {
   data: SingleTread;
@@ -15,7 +15,7 @@ function SingleCardComponent({ data }: PropType) {
         <div
           className="subject"
           style={{
-            color: isHightRating(data.score) ? "#9335ff" : "#e89d40",
+            color: isHighRating(data.score) ? "#9335ff" : "#e89d40",
           }}
         >
           {data.subject}
