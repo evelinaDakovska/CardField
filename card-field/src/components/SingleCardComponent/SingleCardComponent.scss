@@ -1,0 +1,40 @@
+@import "../../variables.scss";
+
+.single-card {
+  @include containers-width;
+  background-color: $card-background-color;
+  margin-bottom: 2rem;
+  box-shadow: $box-shadow-color 5px 5px 10px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 14px;
+  height: auto;
+  padding: 1rem 0;
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    align-items: flex-start;
+    width: 60%;
+    text-align: left;
+  }
+  .right {
+    align-items: flex-end;
+    width: 20%;
+    * {
+      text-align: end;
+    }
+  }
+  .question {
+    font-size: $question-text-size;
+    padding-bottom: 0.5rem;
+  }
+  .subject {
+    font-size: $subject-text-size;
+    font-weight: bold;
+  }
+}

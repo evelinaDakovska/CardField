@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.multiple-data-container {
+  @include containers-width;
+  margin-bottom: 2rem;
+  position: relative;
+  .single-card {
+    margin-bottom: 0;
+  }
+  .shadow-container {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .message-count {
+    width: 10rem;
+    position: absolute;
+    top: -0.5rem;
+    right: 2rem;
+    border-radius: 0.5rem;
+    font-size: $primary-text-size;
+    color: $card-background-color;
+  }
+}

@@ -1,0 +1,13 @@
+$primary-background-color: #f2f2f2;
+$card-background-color: #ffffff;
+$primary-text-color: #999999;
+$box-shadow-color: rgba(149, 157, 165, 0.2);
+
+$primary-text-size: 14px;
+$question-text-size: 12px;
+$subject-text-size: 15px;
+
+@mixin containers-width {
+  max-width: 768px;
+  min-width: 320px;
+}
